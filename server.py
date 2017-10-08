@@ -3,6 +3,7 @@ import socket
 import re 
 from sense_hat import SenseHat
 import home
+import Rainbow
 
 sense = SenseHat()
  
@@ -25,6 +26,12 @@ while True:
           sense.show_message('home')
           home.showHouse()
 
+     if re.match(r'disco', data, re.I):
+          Rainbow.startTheParty()
+          
+     if re.match(r'print', data, re.I):
+          sense.show_message(data)
+          
      else:
           sense.show_message('no puppy')
      

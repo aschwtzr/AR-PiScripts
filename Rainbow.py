@@ -16,8 +16,7 @@ pixels = [
 ]
 
 msleep = lambda x: time.sleep(x / 1000.0)
-
-
+    
 def next_colour(pix):
     r = pix[0]
     g = pix[1]
@@ -45,9 +44,13 @@ def next_colour(pix):
     pix[1] = g
     pix[2] = b
 
-while True:
-    for pix in pixels:
-        next_colour(pix)
+counter = 0
 
-    sense.set_pixels(pixels)
-    msleep(.05)
+def startTheParty():
+    while counter < 5000 :
+        for pix in pixels:
+            next_colour(pix)
+
+        sense.set_pixels(pixels)
+        msleep(.05)
+        counter++
