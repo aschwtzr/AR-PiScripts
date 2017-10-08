@@ -53,4 +53,8 @@ def startTheParty():
 
         sense.set_pixels(pixels)
         msleep(.05)
+<<<<<<< Updated upstream
         counter+=1
+=======
+        counter+=1 
+>>>>>>> Stashed changes
