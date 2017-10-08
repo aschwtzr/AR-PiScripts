@@ -1,0 +1,3 @@
+import Rainbow
+
+Rainbow.startTheParty()

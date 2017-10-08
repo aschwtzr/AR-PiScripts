@@ -24,7 +24,9 @@ while True:
 
      if re.match(r'home', data,re.I):
           sense_images.showHouse()
-
+          
+     if re.match(r'heart',data,re.I):
+          sense_images.showHeart()
 
      if re.match(r'disco', data, re.I):
           Rainbow.startTheParty()
@@ -39,4 +41,5 @@ conn.close()
 #today
 #home
      #send sensor data
+
 
