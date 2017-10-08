@@ -32,6 +32,7 @@ while True:
           Rainbow.startTheParty()
           
      if re.match(r'print', data, re.I):
+          sense.set_rotation(180)
           sense.show_message(data)
 
      conn.send(data)  # echo

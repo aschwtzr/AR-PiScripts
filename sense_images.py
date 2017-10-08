@@ -18,6 +18,7 @@ blank = [
          ]
 
 def showHouse():
+    sense.set_rotation(180)
     house = [
     O, O, O, X, X, O, O, O,
     O, O, X, O, O, X, O, O,
@@ -33,7 +34,7 @@ def showHouse():
 
 def showHeart():
     r = [0,0,0]
-
+    sense.set_rotation(180)
     counter = 0
     while counter < 30:
         if counter%2 == 0:
