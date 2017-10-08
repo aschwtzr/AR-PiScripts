@@ -46,15 +46,11 @@ def next_colour(pix):
 
 def startTheParty():
     counter = 0
-	
-    while counter < 5000 :
+
+    while counter < 4000 :
         for pix in pixels:
             next_colour(pix)
 
         sense.set_pixels(pixels)
         msleep(.05)
-<<<<<<< Updated upstream
-        counter+=1
-=======
         counter+=1 
->>>>>>> Stashed changes

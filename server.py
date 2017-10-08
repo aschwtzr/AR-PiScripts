@@ -2,11 +2,7 @@
 import socket
 import re 
 from sense_hat import SenseHat
-<<<<<<< Updated upstream
-from home import showHouse
-=======
 import sense_images
->>>>>>> Stashed changes
 import Rainbow
 
 sense = SenseHat()
@@ -27,24 +23,15 @@ while True:
      if not data: break
 
      if re.match(r'home', data,re.I):
-<<<<<<< Updated upstream
-          sense.show_message('home')
-          showHouse()
-=======
           sense_images.showHouse()
->>>>>>> Stashed changes
+
 
      if re.match(r'disco', data, re.I):
           Rainbow.startTheParty()
           
      if re.match(r'print', data, re.I):
           sense.show_message(data)
-<<<<<<< Updated upstream
-               
-=======
-     
->>>>>>> Stashed changes
-     print(data)
+
      conn.send(data)  # echo
 conn.close()
 
