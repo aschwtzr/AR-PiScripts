@@ -50,4 +50,4 @@ while True:
         next_colour(pix)
 
     sense.set_pixels(pixels)
-    msleep(2)
+    msleep(.05)
