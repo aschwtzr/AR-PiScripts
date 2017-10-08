@@ -44,13 +44,13 @@ def next_colour(pix):
     pix[1] = g
     pix[2] = b
 
-counter = 0
-
 def startTheParty():
+    counter = 0
+	
     while counter < 5000 :
         for pix in pixels:
             next_colour(pix)
 
         sense.set_pixels(pixels)
         msleep(.05)
-        counter++
+        counter+=1
