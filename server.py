@@ -31,9 +31,9 @@ while True:
      if re.match(r'disco', data, re.I):
           Rainbow.startTheParty()
           
-     if re.match(r'print', data, re.I):
+     if re.match(r'alert', data, re.I):
           sense.set_rotation(180)
-          sense.show_message(data)
+          sense.show_message(data, scroll_speed=.02)
 
      conn.send(data)  # echo
 conn.close()

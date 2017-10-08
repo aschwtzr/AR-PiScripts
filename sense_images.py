@@ -36,7 +36,7 @@ def showHeart():
     r = [0,0,0]
     sense.set_rotation(180)
     counter = 0
-    while counter < 30:
+    while counter < 20:
         if counter%2 == 0:
             red = 255
         else:
@@ -56,7 +56,6 @@ def showHeart():
              ]
         
         sense.set_pixels(heart)
-        print(counter/2)
 
     sense.set_pixels(heart)
 
